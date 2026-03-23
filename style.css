@@ -787,7 +787,20 @@ section {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .hero-grid   { grid-template-columns: 1fr; }
-  .hero-right  { display: none; }
+  .hero-right {
+  display: flex;
+  justify-content: center;
+  order: -1;
+  }
+   .portrait-frame {
+  width: 250px;
+  height: 250px;
+}
+
+.portrait-inner {
+  left: 25px; right: 25px;
+  top: 15px; bottom: 15px;
+}
   .about-grid  { grid-template-columns: 1fr; }
   .prompts-grid { grid-template-columns: 1fr; }
   #navbar { padding: 14px 24px; }
